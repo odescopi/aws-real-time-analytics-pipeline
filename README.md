@@ -4,13 +4,13 @@ A **serverless**, real-time data analytics pipeline on AWS to process and visual
 
 ## Architecture
 
-![Architecture Diagram](images/architecture.png)
+**Data Flow:** Website Data → Kinesis Data Stream → AWS Lambda → Amazon S3 → Athena → QuickSight
 
 The pipeline is built using the following **serverless** AWS services:
 *   **Data Ingestion:** Amazon Kinesis Data Streams
 *   **Data Processing:** AWS Lambda
 *   **Data Storage:** Amazon S3
-*   **Data Querying:** Amazon Athena
+*   **Data Querying:** Amazon Athena  
 *   **Data Visualization:** Amazon QuickSight
 *   **Infrastructure as Code:** AWS CDK (Python)
 
